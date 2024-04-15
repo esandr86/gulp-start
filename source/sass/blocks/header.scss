@@ -1,0 +1,92 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+
+        @media (min-width: 768px) {
+            padding-top: 15px;
+        }
+
+        @media (min-width: 1728px) {
+            padding-top: 59px;
+        }
+    }
+
+    &__logo {
+        img {
+            @media (min-width: 768px) {
+                width: 93px;
+                height: 31px;
+            }
+        }
+        @media (min-width: 768px) {
+            margin-right: 127px;
+        }
+        @media (min-width: 1728px) {
+            margin-right: 345px;
+        }
+    }
+    
+    &__list {
+        @include clear-list;
+        
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        font-size: 16px;
+        line-height: 24px;
+
+        @media (min-width: 1728px) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        a {
+            display: block;
+
+            @media (min-width: 768px) {
+                padding: 18px;
+            }
+            @media (max-width: 1728px) {
+                padding: 13px;
+            }
+        }
+    }
+    &__action {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+        @media (min-width: 768px) {
+            gap: 44px;
+        }
+    }
+
+    &__button {
+        @include clear-button;
+
+        img {
+            display: block;
+
+            @media (min-width: 768px) {
+                width: 29px;
+                height: 27px;
+            }
+        }
+    }
+
+    &__menu {
+        @include clear-button;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+}    
