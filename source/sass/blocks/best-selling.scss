@@ -1,0 +1,128 @@
+.best-selling {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 45px;
+        line-height: 54px;
+        font-weight: 500;
+        text-align: center;
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+            line-height: 39px;
+            margin-top: 38px;
+            margin-bottom: 25px;
+        }
+
+        @media (min-width: 768px) {
+            margin-top: 88px;
+            margin-bottom: 62px;
+        }
+
+        @media (min-width: 1728px) {
+            margin-top: 124px;
+            margin-bottom: 70px;
+        }
+
+        &::after,
+        &::before {
+            width: 41px;
+            height: 3px;
+            background-color: #000000;
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 22px;
+            transform: translateY(-2px);
+        }
+    }
+
+    &__common-section {
+        display: flex;
+        margin-bottom: 25px;
+        gap: 18px;
+
+        @media (min-width: 768px) {
+            gap: 79px;
+            margin-bottom: 60px;
+        }
+
+        @media (min-width: 1728px) {
+            margin-bottom: 81px;
+        }
+    }
+
+    &__button {
+        @include clear-button;
+
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        padding: 8px 38px;
+        border: 2px solid #000000;
+
+        @media (min-width: 768px) {
+            font-size: 28px;
+            line-height: 34px;
+            padding: 20px 48px;
+        }
+
+        &--black {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    }
+
+    &__product-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 25px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 1728px) {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(373px, 504px));
+            grid-template-rows: repeat(2, 524px);
+            gap: 60px 20px;
+            margin-bottom: 85px;
+        }
+    }
+
+    &__product {
+        width: 100%;
+
+        &--large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        &--small {
+            @media (min-width: 768px) and (max-width: 1727px) {
+                width: 47%;
+            }
+        }
+    }
+
+    &__show {
+        @include clear-button;
+
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 600;
+        width: 290px;
+        height: 77px;
+    }
+}
