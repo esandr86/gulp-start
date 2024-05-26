@@ -9,14 +9,14 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: white;
+        background-color: #fbfbfb;
         box-shadow:  2.77px 2.21px 0px #00000005,
         0px 6.65px 5.32px 0px #00000007,
         0px 12.52px 10.02px 0px #00000009,
         0px 22.34px 17.87px 0px #0000000B,
         0px 41.78px 33.42px 0px #0000000D,
         0px 100px 80px 0px #00000012;
-        z-index: 50;
+        z-index: 100;
 
         &--showed {
             display: block;
