@@ -23,7 +23,7 @@
         &--showed {
             @media (max-width: 767px) {
                 .header__nav {
-                position: fixed;
+                position: absolute;
                 top: 0;
                 right: 0;
                 width: 60%;
